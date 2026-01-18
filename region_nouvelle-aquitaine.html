@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nouvelle-Aquitaine</title>
-    <style>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Topo Escalade - Régions Nouvelle-Aquitaine</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
    body {
         font-family: Arial, sans-serif;
         text-align: center;
@@ -12,31 +13,67 @@
         margin: 0;
         padding: 0;
       }
+      main {
+        padding: 20px;
+      }
+            h1,
+            h2,
+            p.description {
+                text-align: center;
+            }
 
-      h1 {
-        color: #333;
-      }
-      p {
-        font-size: 18px;
-        color: #666;
-      }
-      a {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-      }
-      a:hover {
-        background-color: #0056b3;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Nouvelle-Aquitaine</h1>
-    <p>Aucun topo n'est actuellement disponible pour cette région.</p>
-    <a href="regions_france.html">Retour aux régions</a>
-  </body>
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            .button {
+                display: inline-block;
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                margin: 10px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .button:hover {
+                background-color: #0056b3;
+            }
+
+            .button:focus {
+                outline: none;
+            }
+
+            /* Styles spécifiques pour le bouton de retour */
+            .button-return {
+                background-color: #28a745;
+            }
+
+            .button-return:hover {
+                background-color: #218838;
+            }
+
+            /* Centrer tous les boutons */
+            .button-container {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 class="title">Bienvenue en Nouvelle-Aquitaine</h1>
+            <h2 class="subtitle">Choisis un département et explore les sites d'escalade disponibles</h2>
+          
+            <div class="button-container">
+                <a class="button" href="dep_24_dordogne.html">04 - Les Dordogne</a>
+    
+            <p style="text-align: center">
+                <a class="button button-return" href="index.html">Retour à l'accueil</a>
+            </p>
+        </main>
+    </body>
 </html>
